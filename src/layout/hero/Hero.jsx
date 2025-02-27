@@ -1,9 +1,11 @@
-import React from 'react'
-import hero from '../assets/images/hero.jpg'
+import React from 'react';
+import hero from '../../assets/images/hero.jpg';
+import './hero.css';
 
 export default function Hero() {
   return (
-    <section>
+    <section className="hero">
+      <div>
         <main>
             <h1>Little Lemon</h1>
             <h2>Chicago</h2>
@@ -11,6 +13,7 @@ export default function Hero() {
             <button>Reserve a Table</button>
         </main>
         <img src={hero} alt="restaurant food" />
+      </div>
     </section>
   )
 }

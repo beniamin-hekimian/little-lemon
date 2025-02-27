@@ -1,0 +1,9 @@
+:root{
+    /* brand colors */
+    --primary-color: #F4CE14;
+    --secondary-color: #495E57;
+
+    /* typography */
+    --primary-typeface: 'markazi-text', serif;
+    --secondary-typeface: 'Karla', sans-serif;
+}

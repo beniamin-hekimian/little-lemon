@@ -1,15 +1,11 @@
-import './App.css'
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Specials from './components/Specials';
+import './App.css';
+import Home from './pages/Home';
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Hero />
-      <Specials />
+      <Home />
     </>
   )
 }
