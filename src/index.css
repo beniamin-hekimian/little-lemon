@@ -1,9 +1,19 @@
+/* markazi text typeface */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+/* karla typeface */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Armenian:wght@100..900&family=Noto+Serif+Armenian:wght@100..900&display=swap');
+
 :root{
+    /* max-width */
+    --max-width: 1200px;
+
     /* brand colors */
-    --primary-color: #F4CE14;
-    --secondary-color: #495E57;
+    --primary-yellow: #F4CE14;
+    --primary-green: #495E57;
+    --secondary-black: #333333;
 
     /* typography */
-    --primary-typeface: 'markazi-text', serif;
-    --secondary-typeface: 'Karla', sans-serif;
+    --serif-typeface: "Markazi Text", serif;
+    --sans-typeface: "Karla", sans-serif;
 }

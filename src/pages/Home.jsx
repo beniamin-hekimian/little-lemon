@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Specials />
-      <Footer />
+      {/* <Hero /> */}
+      {/* <Specials /> */}
+      {/* <Footer /> */}
     </>
   )
 }

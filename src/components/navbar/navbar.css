@@ -1,0 +1,30 @@
+.navbar{
+    flex: 1;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-wrap: nowrap;
+    font-family: var(--sans-typeface);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--secondary-black);
+}
+
+.navbar a:hover{
+    color: black;
+}
+
+.navbar a:active{
+    text-decoration: underline;
+    text-decoration-color: var(--primary-yellow);
+    text-decoration-thickness: 2px;
+}

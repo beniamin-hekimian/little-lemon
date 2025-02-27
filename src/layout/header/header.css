@@ -1,0 +1,7 @@
+.header{
+    max-width: var(--max-width);
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
