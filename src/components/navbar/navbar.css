@@ -20,10 +20,11 @@
 }
 
 .navbar a:hover{
-    color: black;
+    opacity: 0.75;
 }
 
 .navbar a:active{
+    opacity: 1;
     text-decoration: underline;
     text-decoration-color: var(--primary-yellow);
     text-decoration-thickness: 2px;
