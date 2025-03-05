@@ -5,3 +5,13 @@
     display: flex;
     gap: 20px;
 }
+
+@media screen and (width <= 800px){
+    .navbar{
+        display: none;
+    }
+
+    .header{
+        justify-content: center;
+    }
+}

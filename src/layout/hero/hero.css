@@ -13,10 +13,11 @@
     position: relative;
 }
 
-.hero > div > img{
+.hero img{
     max-width: 400px;
     aspect-ratio: 7/8;
     justify-self: end;
+    align-self: center;
     border-radius: var(--border-radius);
     object-fit: cover;
     position: absolute;
@@ -50,4 +51,24 @@
 
 .hero button{
     margin: 20px 0px;
+}
+
+/* tablet size */
+@media screen and (width <= 800px){
+    .hero img{
+        width: 300px;
+        position: static;
+    }
+}
+
+/* mobile size */
+@media screen and (width <= 625px){
+    .hero > div{
+        grid-template-columns: 1fr;
+    }
+
+    .hero img{
+        width: 100%;
+        justify-self: center;
+    }
 }
