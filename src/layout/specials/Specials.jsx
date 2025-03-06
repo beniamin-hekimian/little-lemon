@@ -11,7 +11,7 @@ export default function Specials() {
     <section className="specials">
 
       <div className="title">
-        <h3>This weeks specials!</h3>
+        <h3>This week's specials!</h3>
         <Button>Online Menu</Button>
       </div>
 
