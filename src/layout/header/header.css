@@ -6,6 +6,7 @@
     gap: 20px;
 }
 
+/* tablet size */
 @media screen and (width <= 800px){
     .navbar{
         display: none;
