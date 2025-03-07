@@ -18,7 +18,6 @@ export default function Testimonials() {
                     <h4>Sophia Carter</h4>
                   </div>
                   <q>Absolutely loved the food! Fresh ingredients and amazing flavors.</q>
-                  <br />
                   <small>⭐⭐⭐⭐⭐ 5</small>
                 </article>
 
@@ -29,7 +28,6 @@ export default function Testimonials() {
                     <h4>James Mitchell</h4>
                   </div>
                   <q>Great ambiance and service. The seafood platter was fantastic!</q>
-                  <br />
                   <small>⭐⭐⭐⭐ 4</small>
                 </article>
 
@@ -40,7 +38,6 @@ export default function Testimonials() {
                     <h4>Emma Rodriguez</h4>
                   </div>
                   <q>Authentic Mediterranean taste! The baklava was the best I've ever had.</q>
-                  <br />
                   <small>⭐⭐⭐⭐⭐ 5</small>
                 </article>
 
@@ -51,7 +48,6 @@ export default function Testimonials() {
                     <h4>Liam Anderson</h4>
                   </div>
                   <q>Lovely place, great for a cozy dinner. The pasta was delicious!</q>
-                  <br />
                   <small>⭐⭐⭐⭐ 4</small>
                 </article>
             </main>
