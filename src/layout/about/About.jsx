@@ -5,7 +5,7 @@ import about2 from '../../assets/images/about2.jpg';
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
         <main>
             <h3>Little Lemon</h3>
             <h4>Chicago</h4>

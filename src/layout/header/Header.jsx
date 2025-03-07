@@ -6,7 +6,9 @@ import './header.css';
 export default function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Little Lemon brand logo" />
+      <a href="">
+        <img src={logo} alt="Little Lemon brand logo" />
+      </a>
       <Navbar />
     </header>
   )

@@ -6,6 +6,10 @@
     gap: 20px;
 }
 
+.header a{
+    align-self: center;
+}
+
 /* tablet size */
 @media screen and (width <= 800px){
     .navbar{

@@ -5,7 +5,7 @@ import Button from '../../components/button/Button';
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div>
         <main>
             <h1>Little Lemon</h1>

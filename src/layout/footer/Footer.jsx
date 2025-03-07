@@ -6,18 +6,20 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div>
-        <img src={brand} alt="Little Lemon brand icon" />
+        <a href="">
+          <img src={brand} alt="Little Lemon brand icon" />
+        </a>
 
         {/* first links group */}
         <article className="footer-section">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Order Online</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Reservations</a></li>
+            <li><a className="disabled-link" title="This feature is not available">Order Online</a></li>
+            <li><a>Login</a></li>
           </ul>
         </article>
 
@@ -25,9 +27,9 @@ export default function Footer() {
         <article className="footer-section">
           <h4>Contact</h4>
           <ul>
-            <li><a href="#">+123-456-789</a></li>
-            <li><a href="#">contact@littlelemon.com</a></li>
-            <li><a href="#">Support Center</a></li>
+            <li><a>+123-456-789</a></li>
+            <li><a>contact@littlelemon.com</a></li>
+            <li><a>Support Center</a></li>
           </ul>
         </article>
 
@@ -35,9 +37,9 @@ export default function Footer() {
         <article className="footer-section">
           <h4>Social Media</h4>
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a>Facebook</a></li>
+            <li><a>Instagram</a></li>
+            <li><a>Twitter</a></li>
           </ul>
         </article>
       </div>

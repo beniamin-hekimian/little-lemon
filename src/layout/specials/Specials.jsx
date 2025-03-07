@@ -8,7 +8,7 @@ import delivery from '../../assets/icons/delivery.svg';
 
 export default function Specials() {
   return (
-    <section className="specials">
+    <section className="specials" id="specials">
 
       <div className="title">
         <h3>This week's specials!</h3>

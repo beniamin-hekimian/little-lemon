@@ -37,15 +37,20 @@
     font-weight: 500;
 }
 
-.footer-section a:hover{
+.footer-section a:not(.disabled-link):hover{
     opacity: 0.75;
 }
 
-.footer-section a:active{
+.footer-section a:not(.disabled-link):active{
     opacity: 1;
     text-decoration: underline;
     text-decoration-color: var(--primary-yellow);
     text-decoration-thickness: 2px;
+}
+
+.disabled-link {
+    cursor: not-allowed;
+    opacity: 0.75;
 }
 
 @media screen and (width <= 800px){
@@ -55,7 +60,7 @@
 }
 
 @media screen and (width <= 400px){
-    .footer div{
+    .footer > div{
         gap: 5px;
     }
     .footer-section a{
