@@ -7,6 +7,10 @@
     gap: 40px;
 }
 
+.about main{
+    padding: 48px 0;
+}
+
 .about h3{
     font-family: var(--serif-typeface);
     font-size: 48px;

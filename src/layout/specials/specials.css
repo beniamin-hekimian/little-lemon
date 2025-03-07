@@ -1,6 +1,7 @@
 .specials{
     max-width: var(--max-width);
     padding: 20px;
+    padding-bottom: 40px;
     margin: 0 auto;
 }
 
