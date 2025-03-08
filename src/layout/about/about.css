@@ -68,8 +68,20 @@
 @media screen and (width <= 625px){
     .about{
         grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        padding-bottom: 20px;
     }
+
+    .about main{
+        padding: 0;
+    }
+
     .image-container{
-        display: none;
+        margin: 20px;
+    }
+
+    .image-container > img{
+        max-width: 60%;
     }
 }
