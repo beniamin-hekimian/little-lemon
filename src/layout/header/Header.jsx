@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="header">
       <div>
-        <Link index>
+        <Link to="/">
           <img src={logo} alt="Little Lemon brand logo" />
         </Link>
         <Navbar />

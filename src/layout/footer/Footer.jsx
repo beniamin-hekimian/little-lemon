@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div>
-        <Link index>
+        <Link to="/">
           <img src={brand} alt="Little Lemon brand icon" />
         </Link>
 
@@ -15,7 +15,7 @@ export default function Footer() {
         <article className="footer-section">
           <h4>Navigation</h4>
           <ul>
-            <li><Link index>Home</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/booking">Reservations</Link></li>
