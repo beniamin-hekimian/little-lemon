@@ -1,7 +1,7 @@
 import React from 'react';
 import hero from '../../assets/images/hero.jpg';
 import './hero.css';
-import Button from '../../components/button/Button';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
             <h1>Little Lemon</h1>
             <h2>Chicago</h2>
             <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <Button>Reserve a Table</Button>
+            <Link to="/booking" className="custom-button">Reserve a Table</Link>
         </main>
         <img src={hero} alt="restaurant food" />
       </div>

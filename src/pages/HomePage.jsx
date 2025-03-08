@@ -6,7 +6,7 @@ import Testimonials from '../layout/testimonials/Testimonials';
 import About from '../layout/about/About';
 import Footer from  '../layout/footer/Footer';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Header />

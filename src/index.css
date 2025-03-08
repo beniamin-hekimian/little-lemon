@@ -20,3 +20,26 @@
     --serif-typeface: "Markazi Text", serif;
     --sans-typeface: "Karla", sans-serif;
 }
+
+.custom-button {
+    all: unset;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: var(--sans-typeface);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary-black);
+    background-color: var(--primary-yellow);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.custom-button:hover {
+    opacity: 0.75;
+}
+
+.custom-button:not(.disabled-link):active {
+    opacity: 1;
+}

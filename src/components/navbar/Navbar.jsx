@@ -1,17 +1,17 @@
 import React from 'react';
 import './navbar.css';
-import Button from '../button/Button';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Reservations</a></li>
+        <li><Link index>Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/menu">Menu</Link></li>
+        <li><Link to="/booking">Reservations</Link></li>
         <li><a className="disabled-link" title="This feature is not available">Order Online</a></li>
-        <li><Button>Login</Button></li>
+        <li><a className="disabled-link custom-button" title="This feature is not available">Login</a></li>
       </ul>
     </nav>
   );

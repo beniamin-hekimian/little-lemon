@@ -1,25 +1,26 @@
 import React from 'react';
 import './footer.css';
 import brand from '../../assets/icons/brand.png';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div>
-        <a href="">
+        <Link index>
           <img src={brand} alt="Little Lemon brand icon" />
-        </a>
+        </Link>
 
         {/* first links group */}
         <article className="footer-section">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Reservations</a></li>
+            <li><Link index>Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/menu">Menu</Link></li>
+            <li><Link to="/booking">Reservations</Link></li>
             <li><a className="disabled-link" title="This feature is not available">Order Online</a></li>
-            <li><a>Login</a></li>
+            <li><a className="disabled-link" title="This feature is not available">Login</a></li>
           </ul>
         </article>
 
