@@ -6,10 +6,12 @@ import './header.css';
 export default function Header() {
   return (
     <header className="header">
-      <a href="">
-        <img src={logo} alt="Little Lemon brand logo" />
-      </a>
-      <Navbar />
+      <div>
+        <a href="">
+          <img src={logo} alt="Little Lemon brand logo" />
+        </a>
+        <Navbar />
+      </div>
     </header>
   )
 }

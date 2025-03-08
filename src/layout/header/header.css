@@ -1,4 +1,9 @@
 .header{
+    background-color: var(--secondary-white);
+    width: 100%;
+}
+
+.header > div{
     max-width: var(--max-width);
     padding: 10px 20px;
     margin: 0 auto;
@@ -16,7 +21,7 @@
         display: none;
     }
 
-    .header{
+    .header > div{
         justify-content: center;
     }
 }
