@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import brand from '../../assets/icons/brand.png';
+import brand from '../../../public/brand.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {

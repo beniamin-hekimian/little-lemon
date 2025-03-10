@@ -1,7 +1,6 @@
-import React from 'react';
-import Header from '../layout/header/Header';
-import About from '../layout/about/About';
-import Footer from '../layout/footer/Footer';
+import Header from '../components/header/Header';
+import About from '../components/about/About';
+import Footer from '../components/footer/Footer';
 
 export default function AboutPage() {
   return (

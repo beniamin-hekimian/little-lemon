@@ -1,7 +1,6 @@
-import React from 'react';
-import Header from '../layout/header/Header';
-import Footer from '../layout/footer/Footer';
-import Menu from '../layout/menu/Menu';
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
+import Menu from '../components/menu/Menu';
 
 export default function MenuPage() {
   return (

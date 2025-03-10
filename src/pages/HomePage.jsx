@@ -1,10 +1,9 @@
-import React from 'react';
-import Header from '../layout/header/Header';
-import Hero from '../layout/hero/Hero';
-import Specials from '../layout/specials/Specials';
-import Testimonials from '../layout/testimonials/Testimonials';
-import About from '../layout/about/About';
-import Footer from  '../layout/footer/Footer';
+import Header from '../components/header/Header';
+import Hero from '../components/hero/Hero';
+import Specials from '../components/specials/Specials';
+import Testimonials from '../components/testimonials/Testimonials';
+import About from '../components/about/About';
+import Footer from  '../components/footer/Footer';
 
 export default function HomePage() {
   return (
