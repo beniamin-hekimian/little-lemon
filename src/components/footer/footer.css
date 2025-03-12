@@ -12,6 +12,10 @@
     gap: 80px;
 }
 
+.footer a{
+    display: flex;
+}
+
 .footer img{
     max-width: 75%;
     align-self: center;
