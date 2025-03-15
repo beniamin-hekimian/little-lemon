@@ -18,7 +18,7 @@ export default function Specials() {
       <div className="cards-container">
         {/* the first card */}
         <article>
-          <img src={special1} alt="Greek Salad" />
+          <img src={special1} alt="Greek Salad" loading="lazy" />
           <main>
             <div>
               <h4>Greek salad</h4>
@@ -34,7 +34,7 @@ export default function Specials() {
 
         {/* the second card */}
         <article>
-          <img src={special2} alt="Bruchetta" />
+          <img src={special2} alt="Bruchetta" loading="lazy" />
           <main>
             <div>
               <h4>Bruchetta</h4>
@@ -50,7 +50,7 @@ export default function Specials() {
 
         {/* the third card */}
         <article>
-          <img src={special3} alt="Lemon Dessert" />
+          <img src={special3} alt="Lemon Dessert" loading="lazy" />
           <main>
             <div>
               <h4>Lemon Dessert</h4>

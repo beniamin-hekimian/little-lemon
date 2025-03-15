@@ -26,8 +26,8 @@ export default function About() {
         </address>
       </main>
       <div className="image-container">
-          <img src={about1} alt="Mario and Adrian A" />
-          <img src={about2} alt="Mario and Adrian B" />
+          <img src={about1} alt="Mario and Adrian A" loading="lazy" />
+          <img src={about2} alt="Mario and Adrian B" loading="lazy" />
       </div>
     </section>
   )

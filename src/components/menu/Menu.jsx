@@ -34,7 +34,7 @@ export default function Menu() {
       <main className="meals-container">
         {meals.map((meal, index) => (
           <article className="meal" key={index}>
-            <img src={meal.image} alt={meal.name} />
+            <img src={meal.image} alt={meal.name} loading="lazy"/>
             <main>
               <div>
                 <h4>{meal.name}</h4>

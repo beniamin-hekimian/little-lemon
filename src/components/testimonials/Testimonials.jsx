@@ -14,7 +14,7 @@ export default function Testimonials() {
                 {/* the first review */}
                 <article className="review">
                   <div>
-                    <img src={review1} alt="Sophia Carter" />
+                    <img src={review1} alt="Sophia Carter" loading="lazy" />
                     <h4>Sophia Carter</h4>
                   </div>
                   <q>Absolutely loved the food! Fresh ingredients and amazing flavors.</q>
@@ -24,7 +24,7 @@ export default function Testimonials() {
                 {/* the second review */}
                 <article className="review">
                   <div>
-                    <img src={review2} alt="James Mitchell" />
+                    <img src={review2} alt="James Mitchell" loading="lazy" />
                     <h4>James Mitchell</h4>
                   </div>
                   <q>Great ambiance and service. The seafood platter was fantastic!</q>
@@ -34,7 +34,7 @@ export default function Testimonials() {
                 {/* the third review */}
                 <article className="review">
                   <div>
-                    <img src={review3} alt="Emma Rodriguez" />
+                    <img src={review3} alt="Emma Rodriguez" loading="lazy" />
                     <h4>Emma Rodriguez</h4>
                   </div>
                   <q>Authentic Mediterranean taste! The baklava was the best I've ever had.</q>
@@ -44,7 +44,7 @@ export default function Testimonials() {
                 {/* the fourth review */}
                 <article className="review">
                   <div>
-                    <img src={review4} alt="Liam Anderson" />
+                    <img src={review4} alt="Liam Anderson" loading="lazy" />
                     <h4>Liam Anderson</h4>
                   </div>
                   <q>Lovely place, great for a cozy dinner. The pasta was delicious!</q>
