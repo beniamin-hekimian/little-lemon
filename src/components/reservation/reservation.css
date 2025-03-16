@@ -66,6 +66,7 @@ form select{
     font-weight: 600;
     font-size: 18px;
     width: 100%;
+    text-align: center;
 }
 
 @media screen and (width < 625px){

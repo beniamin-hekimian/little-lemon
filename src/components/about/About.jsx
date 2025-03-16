@@ -18,7 +18,7 @@ export default function About() {
             <img src={date} alt="calendar icon" /> <strong>Monday to Saturday</strong>
           </p>
           <p>
-            <img src={time} alt="time icon" /> Open from <strong>10:00 AM to 10:00 PM</strong>
+            <img src={time} alt="time icon" /> Open from <strong>5:00 PM to 10:00 PM</strong>
           </p>
           <p>
             <img src={location} alt="location icon" /> Location: 123 Mediterranean St., <strong>Chicago</strong>
