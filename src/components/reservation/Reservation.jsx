@@ -4,8 +4,8 @@ import restaurant from '../../assets/images/restaurant.jpg';
 
 export default function Reservation({ availableTimes, dispatch, submitForm }) {
   // Define state variables for the form fields
-  const [date, setDate] = useState('');
-  const [time, setTime] = useState('');
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+  const [time, setTime] = useState("5:00 PM");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("None");
 
@@ -40,14 +40,13 @@ export default function Reservation({ availableTimes, dispatch, submitForm }) {
         {/* date input */}
         <div>
           <label htmlFor="res-date">Choose date</label>
-          <input type="date" id="res-date" value={date} onChange={handleDateChange} />
+          <input type="date" id="res-date" value={date} onChange={handleDateChange} required />
         </div>
 
         {/* time input */}
         <div>
           <label htmlFor="res-time">Choose time</label>
-          <select id="res-time" value={time} onChange={handleTimeChange}>
-            <option value="" hidden>Time</option>
+          <select id="res-time" value={time} onChange={handleTimeChange} required>
             {availableTimes.map((time) => (
               <option key={time} value={time}>
                 {time}
@@ -59,13 +58,13 @@ export default function Reservation({ availableTimes, dispatch, submitForm }) {
         {/* guests input */}
         <div>
           <label htmlFor="guests">Number of guests</label>
-          <input type="number" min="1" max="10" id="guests" value={guests} onChange={handleGuestsChange} />
+          <input type="number" min="1" max="10" id="guests" value={guests} onChange={handleGuestsChange} required />
         </div>
 
         {/* occasion input */}
         <div>
           <label htmlFor="occasion">Occasion</label>
-          <select id="occasion" value={occasion} onChange={handleOccasionChange}>
+          <select id="occasion" value={occasion} onChange={handleOccasionChange} required>
             <option value="None">None</option>
             <option value="Birthday">Birthday</option>
             <option value="Engagement">Engagement</option>
