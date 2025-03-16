@@ -39,7 +39,7 @@ form > div{
     gap: 20px;
 }
 
-form input.custom-button{
+form .custom-button{
     padding: 10px 0 10px 0;
     margin: 20px 0;
     grid-column: span 2;
@@ -73,7 +73,7 @@ form select{
         font-size: 48px;
     }
 
-    form input.custom-button{
+    form .custom-button{
         width: 100%;
     }
 
