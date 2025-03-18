@@ -1,70 +1,37 @@
-import React from 'react';
 import './specials.css';
-import special1 from '../../assets/images/special1.jpg';
-import special2 from '../../assets/images/special2.jpg';
-import special3 from '../../assets/images/special3.jpg';
-import delivery from '../../assets/icons/delivery.svg';
 import { Link } from 'react-router-dom';
+import delivery from '../../assets/icons/delivery.svg';
+import menu from '../../data/menu.js';
 
 export default function Specials() {
+  // Filter the specials from the menu array
+  const specials = menu.filter(item => item.special);
+
   return (
     <section className="specials" id="specials">
-
       <div className="title">
         <h3>This week's specials!</h3>
         <Link to="/menu" className="custom-button">Online Menu</Link>
       </div>
 
       <div className="cards-container">
-        {/* the first card */}
-        <article>
-          <img src={special1} alt="Greek Salad" loading="lazy" />
-          <main>
-            <div>
-              <h4>Greek salad</h4>
-              <small>$12.99</small>
-            </div>
-            <p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>
-            <a>
-              Order a delivery &nbsp;
-              <img src={delivery} alt="Delivery icon" />
-            </a>
-          </main>
-        </article>
-
-        {/* the second card */}
-        <article>
-          <img src={special2} alt="Bruchetta" loading="lazy" />
-          <main>
-            <div>
-              <h4>Bruchetta</h4>
-              <small>$5.99</small>
-            </div>
-            <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. </p>
-            <a>
-              Order a delivery &nbsp;
-              <img src={delivery} alt="Delivery icon" />
-            </a>
-          </main>
-        </article>
-
-        {/* the third card */}
-        <article>
-          <img src={special3} alt="Lemon Dessert" loading="lazy" />
-          <main>
-            <div>
-              <h4>Lemon Dessert</h4>
-              <small>$5.00</small>
-            </div>
-            <p>This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined. </p>
-            <a>
-              Order a delivery &nbsp;
-              <img src={delivery} alt="Delivery icon" />
-            </a>
-          </main>
-        </article>
+        {specials.map(item => (
+          <article key={item.id}>
+            <img src={item.image} alt={item.name} loading="lazy" />
+            <main>
+              <div>
+                <h4>{item.name}</h4>
+                <small>{item.price}</small>
+              </div>
+              <p>{item.description}</p>
+              <a>
+                Order a delivery &nbsp;
+                <img src={delivery} alt="Delivery icon" />
+              </a>
+            </main>
+          </article>
+        ))}
       </div>
-
     </section>
-  )
+  );
 }

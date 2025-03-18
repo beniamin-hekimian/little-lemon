@@ -1,46 +1,35 @@
-import React from 'react';
+import { useState } from 'react';
 import './menu.css';
-import menu from '../../assets/images/menu.jpg';
-
-const meals = [
-  {
-    image: new URL('../../assets/images/special1.jpg', import.meta.url).href,
-    name: "Greek Salad",
-    price: "$12.99",
-    description: "The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese, garnished with crunchy garlic and rosemary croutons."
-  },
-  {
-    image: new URL('../../assets/images/special2.jpg', import.meta.url).href,
-    name: "Bruchetta",
-    price: "$5.99",
-    description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
-  },
-  {
-    image: new URL('../../assets/images/special3.jpg', import.meta.url).href,
-    name: "Lemon Dessert",
-    price: "$5.00",
-    description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
-  },
-];
+import image from '../../assets/images/menu.jpg';
+import menu from '../../data/menu.js';
 
 export default function Menu() {
+  const [selectedType, setSelectedType] = useState("meal");
+
+  const filteredMenu = menu.filter((item) => item.type === selectedType);
+
   return (
     <section className="menu">
       <div>
-        <img src={menu} alt="A chef preparing food in a restaurant kitchen" />
+        <img src={image} alt="A chef preparing food in a restaurant kitchen" />
         <h3>Our Menu</h3>
+        <div className="filter-group">
+          <button onClick={() => setSelectedType("meal")} className={selectedType === "meal" ? "active" : ""}>Meals</button>
+          <button onClick={() => setSelectedType("dessert")} className={selectedType === "dessert" ? "active" : ""}>Desserts</button>
+          <button onClick={() => setSelectedType("drink")} className={selectedType === "drink" ? "active" : ""}>Drinks</button>
+        </div>
       </div>
 
       <main className="meals-container">
-        {meals.map((meal, index) => (
-          <article className="meal" key={index}>
-            <img src={meal.image} alt={meal.name} loading="lazy"/>
+        {filteredMenu.map((item) => (
+          <article className="meal" key={item.id}>
+            <img src={item.image} alt={item.name} loading="lazy"/>
             <main>
               <div>
-                <h4>{meal.name}</h4>
-                <small>{meal.price}</small>
+                <h4>{item.name}</h4>
+                <small>{item.price}</small>
               </div>
-              <p>{meal.description}</p>
+              <p>{item.description}</p>
             </main>
           </article>
         ))}

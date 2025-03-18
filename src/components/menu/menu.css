@@ -21,6 +21,28 @@
     position: absolute;
 }
 
+.filter-group{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    bottom: 6px;
+}
+
+.filter-group button{
+    all: unset;
+    color: var(--secondary-white);
+    font-family: var(--sans-typeface);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.filter-group button.active{
+    text-decoration: underline;
+    text-decoration-color: var(--primary-yellow);
+    text-decoration-thickness: 2px;
+}
+
 .meals-container{
     max-width: var(--max-width);
     padding: 20px;
@@ -39,6 +61,7 @@
 
 .meal > img{
     width: 40%;
+    aspect-ratio: 4/3;
     border-radius: 16px 0 0 16px;
     object-fit: cover;
 }
